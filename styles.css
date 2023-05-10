@@ -1,0 +1,102 @@
+  body {
+    background-color: darkgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  
+  .zegar {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid black;
+    position: relative;
+  }
+  
+  .zegar .numer {
+    --rotation: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotate(var(--rotation));
+    font-size: 1.5rem;
+  }
+  
+  .zegar .numer1 {
+     --rotation: 30deg; 
+    }
+  .zegar .numer2 {
+     --rotation: 60deg;
+    }
+  .zegar .numer3 {
+     --rotation: 90deg; 
+    }
+  .zegar .numer4 {
+     --rotation: 120deg; }
+  .zegar .numer5 {
+     --rotation: 150deg; 
+    }
+  .zegar .numer6 {
+     --rotation: 180deg; 
+    }
+  .zegar .numer7 {
+     --rotation: 210deg; 
+    }
+  .zegar .numer8 {
+     --rotation: 240deg; }
+  .zegar .numer9 { 
+    --rotation: 270deg; 
+    }
+  .zegar .numer10 { 
+    --rotation: 300deg;
+    }
+  .zegar .numer11 {
+     --rotation: 330deg; 
+    }
+  
+  .zegar .wsk {
+    --rotation: 0;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform-origin: bottom;
+    z-index: 10;
+    transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+  }
+  
+  .zegar::after {
+    content: '';
+    position: absolute;
+    background-color: black;
+    z-index: 11;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+  
+  .zegar .wsk.second {
+    width: 2px;
+    height: 45%;
+    background-color: red;
+  }
+  
+  .zegar .wsk.minute {
+    width: 4px;
+    height: 40%;
+    background-color: black;
+  }
+  
+  .zegar .wsk.hour {
+    width: 8px;
+    height: 30%;
+    background-color: black;
+  }
