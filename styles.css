@@ -27,35 +27,37 @@
   }
   
   .zegar .numer1 {
-     --rotation: 30deg; 
+    transform: translate(70px,20px);
     }
   .zegar .numer2 {
-     --rotation: 60deg;
+    transform: translate(120px,70px);
     }
   .zegar .numer3 {
-     --rotation: 90deg; 
+    transform: translate(140px,135px);
     }
   .zegar .numer4 {
-     --rotation: 120deg; }
+    transform: translate(120px,206px);
+    }
   .zegar .numer5 {
-     --rotation: 150deg; 
+    transform: translate(70px,257px);
     }
   .zegar .numer6 {
-     --rotation: 180deg; 
+    transform: translate(0px,275px);
     }
   .zegar .numer7 {
-     --rotation: 210deg; 
+    transform: translate(-70px,257px); 
     }
   .zegar .numer8 {
-     --rotation: 240deg; }
+    transform: translate(-120px,206px);
+    }
   .zegar .numer9 { 
-    --rotation: 270deg; 
+    transform: translate(-140px,135px);
     }
   .zegar .numer10 { 
-    --rotation: 300deg;
+    transform: translate(-115px,70px);
     }
   .zegar .numer11 {
-     --rotation: 330deg; 
+    transform: translate(-70px,20px); 
     }
   
   .zegar .wsk {
